@@ -1,7 +1,33 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+## Visual Studio / VS Code
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+.vscode/
 
-/.vs/octo-sql/CopilotIndices/17.14.734.62261
-/.vs/octo-sql/FileContentIndex
-/.vs/octo-sql/v17
+## Build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.exe
+*.pdb
+*.cache
+project.lock.json
+artifacts/
+
+## NuGet
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+## OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+## Local Octo SQL library (user data lives in AppData; ignore accidental local copies)
+library.json
